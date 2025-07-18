@@ -1,0 +1,31 @@
+# Dataset and Loader Configuration
+dataset_path: "dataset"
+horizon: 16
+max_path_length: 73000
+batch_size: 128
+
+# Model Configuration
+dim: 16
+attention: false
+dim_mults: [1, 2, 4, 8]
+
+# Diffusion Configuration
+n_timesteps: 20
+predict_epsilon: false
+clip_denoised: true
+
+# Training Configuration
+total_steps: 100000
+learning_rate: 2e-4
+grad_accum_steps: 2
+ema_decay: 0.995
+update_ema_every: 10
+warmup_steps: 0
+prefetch_batches: 2
+seed: 0
+
+# Logging and Checkpointing Configuration
+workdir: "checkpoints"
+log_every: 100
+save_every: 2000
+resume: false
