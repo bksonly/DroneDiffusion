@@ -59,6 +59,10 @@ This project requires **Python 3.10.15**.
    pip install --upgrade pip
    pip install -U "jax[cuda12_pip]==0.4.26" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
    pip install -r requirements.txt
+
+   对dmac/bin/activate写入export LD_LIBRARY_PATH="/home/server/Desktop/DroneDiffusion/dmac/lib/python3.10/site-packages/nvidia/cuda_runtime/lib:/home/server/Desktop/DroneDiffusion/dmac/lib/python3.10/site-packages/nvidia/cudnn/lib:$LD_LIBRARY_PATH"
+   
+   echo $LD_LIBRARY_PATH
    ```
 
 > **Note:** ROS is not included as a dependency for this project, please see the [intended use](#overview).

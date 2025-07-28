@@ -1,5 +1,8 @@
+jax==0.4.26
+jaxlib==0.4.26
 numpy==1.26.0
 flax==0.8.2
 optax==0.2.1
 einops
 pyyaml
+orbax-checkpoint==0.5.10

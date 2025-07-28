@@ -2,7 +2,7 @@
 dataset_path: "dataset"
 horizon: 16
 max_path_length: 73000
-batch_size: 128
+batch_size: 1
 
 # Model Configuration
 dim: 16
